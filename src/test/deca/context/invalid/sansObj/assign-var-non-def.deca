@@ -1,0 +1,11 @@
+// Description:
+//    Affectation à une variable entière d'une variable non définie
+//
+// Résultat:
+//variable non definie
+//
+
+{
+   int a;
+   a = b;
+}

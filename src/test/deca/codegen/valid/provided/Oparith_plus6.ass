@@ -1,0 +1,44 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #0, R2
+	STORE R2, 1(GB)
+	LOAD #90, R2
+	STORE R2, 2(GB)
+while0:
+	LOAD 2(GB), R2
+	PUSH R2
+	LOAD #0, R2
+	CMP R2, R2
+	BGE greateq1
+	LOAD #0, R2
+	BRA Fin_greateq1
+greateq1:
+	LOAD #1, R2
+Fin_greateq1:
+	CMP #1, R2
+	BNE Finw0
+	PUSH R2
+	LOAD 1(GB), R2
+	PUSH R2
+	LOAD #1, R2
+	LOAD R2, R0
+	POP R2
+	ADD R0, R2
+	STORE R2, 1(GB)
+	PUSH R2
+	LOAD 2(GB), R2
+	PUSH R2
+	LOAD #1, R2
+	LOAD R2, R0
+	POP R2
+	SUB R0, R2
+	STORE R2, 2(GB)
+	BRA while0
+Finw0:
+	LOAD 1(GB), R1
+	WINT
+	LOAD 2(GB), R1
+	WINT
+	HALT
+; end main program

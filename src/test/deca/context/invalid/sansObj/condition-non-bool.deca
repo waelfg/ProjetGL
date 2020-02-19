@@ -1,0 +1,13 @@
+// Description:
+//     Utilisation d'un if avec une condition non booléenne
+//
+// Résultat:
+//Une condition ne peut être qu'un booléen
+//
+{
+    int x = 123;
+    int y = 4;
+    if (x){
+        y = 0;
+    }
+}

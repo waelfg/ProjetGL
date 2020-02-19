@@ -1,0 +1,12 @@
+// Description:
+//    Méthode renvoyant normalement un int qui renvoie un float
+//
+// Résultat:
+//Le type renvoyé en pratique doit correspondre à un sous-type du type attendu
+//
+class A {
+    int methode(){
+        return 2.5;
+    }
+}
+{}

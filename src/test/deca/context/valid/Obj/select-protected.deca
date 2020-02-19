@@ -1,0 +1,15 @@
+// Description:
+//    Sélection d'un champ protected à l'intérieur d'une sous-classe
+//
+// Résultat:
+//    Succès
+//
+class A {
+    protected int a;
+}
+class B extends A{
+    void methode(){
+        this.a;
+    }
+}
+{}

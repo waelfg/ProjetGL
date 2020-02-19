@@ -1,0 +1,15 @@
+//Description : test des setters
+//
+class A {
+    int x  ;
+
+    void setX(int entier) {
+        this.x = entier ;
+    }
+}
+
+{
+      A a = new A() ;
+      a.setX(10);
+      println(a.x);
+}

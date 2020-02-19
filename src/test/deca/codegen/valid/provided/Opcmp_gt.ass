@@ -1,0 +1,27 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #3, R2
+	STORE R2, 1(GB)
+	LOAD #2, R2
+	STORE R2, 2(GB)
+	LOAD 1(GB), R2
+	PUSH R2
+	LOAD 2(GB), R2
+	CMP R2, R2
+	BGT great1
+	LOAD #0, R2
+	BRA Fin_great1
+great1:
+	LOAD #1, R2
+Fin_great1:
+	CMP #0, R2
+	CMP #0, R2
+	BEQ else1
+	WSTR "conditionverifiee"
+	BRA fin_if1
+else1:
+	WSTR "condnonverifiee"
+fin_if1:
+	HALT
+; end main program

@@ -1,0 +1,4 @@
+//Description : field int declaration
+class A {
+    int n ;
+}

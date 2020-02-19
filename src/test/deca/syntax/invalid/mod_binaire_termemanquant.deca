@@ -1,0 +1,10 @@
+//  Description :
+//            Modulo avec un seul terme
+//
+// Résultat:
+//mismatched input ';'
+//
+{
+    int n = 0;
+    n % ;
+}

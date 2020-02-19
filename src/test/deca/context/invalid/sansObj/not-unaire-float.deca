@@ -1,0 +1,10 @@
+// Description:
+//          Utilisation du not unaire sur un float
+//
+// Résultat:
+//L'opérateur Not doit être utilisé sur un booléen
+//
+{
+    float a = 10.57;
+    if (!a){}
+}

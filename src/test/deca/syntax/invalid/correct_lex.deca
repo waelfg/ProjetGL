@@ -1,0 +1,11 @@
+// Description:
+//    Programme lexicalement correct mais pas syntaxiquement
+//
+// Résultat:
+//no viable alternative at input 'je'
+//Succès pour test_lex
+je mange un oiseau
+12*+-42
+&& ><
+"chaine"
+0.6

@@ -1,0 +1,11 @@
+// Description:
+//          Utilisation d'une boucle while
+//
+// Résultat:
+//          Succès
+{
+    int n = 5;
+    while (n > 1){
+        n = n - 1;
+    }
+}

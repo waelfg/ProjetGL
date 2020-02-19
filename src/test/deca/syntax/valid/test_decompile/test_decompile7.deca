@@ -1,0 +1,10 @@
+class A{
+  int value;
+  public A (){
+    value=i;
+  }
+
+}
+{
+A a = new A();
+}

@@ -1,0 +1,11 @@
+//Description : Implémentation des méthodes dans les classes
+//
+class A {
+    int x = 0 ;
+    int y = 0 ;
+
+    void incrementNumber () {
+        x = x + 1 ;
+        y = y + 1 ;
+    }
+}

@@ -1,0 +1,11 @@
+// Description:
+//    Affectation d'un booléen à une variable de type int
+//
+// Résultat:
+//right value boolean expected int
+//
+{
+   int a;
+   boolean b;
+   a = b;
+}

@@ -1,0 +1,14 @@
+// Description:
+//         Utilisation des opérations arithmétiques sur des entiers
+//
+// Résultat:
+//Succès
+//
+{
+    int a = 2 ; 
+    int b = 2 * a ; 
+    int c = a % 2 ; 
+    int d = a/ 2 ; 
+    int e = a + 2 ; 
+    int f = a - 2 ; 
+}

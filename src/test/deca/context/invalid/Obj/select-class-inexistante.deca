@@ -1,0 +1,9 @@
+// Description:
+//    Sélection d'un champ ou d'une méthode d'une classe non déclarée
+//
+// Résultat:
+//variable non definie
+//
+{
+    boolean bool = A.b;
+}

@@ -1,0 +1,61 @@
+; start main program
+; Début du programme
+	STORE R0, 1(GB)
+	STORE R0, 2(GB)
+	TSTO #3
+	BOV pile_pleine
+	ADDSP #3
+; Main program
+	HALT
+; initialisation des champs de la classe A
+init.A:
+	LOAD #0, R2
+	LOAD -2(SP), R1
+	STORE R2, 1(R1)
+	LOAD #0, R3
+	LOAD -2(SP), R1
+	STORE R3, 2(R1)
+	RTS
+; initialisation des champs de la classe B
+init.B:
+	LOAD #null, R4
+	LOAD -2(SP), R1
+	STORE R4, 1(R1)
+	LOAD #0, R5
+	LOAD -2(SP), R1
+	STORE R5, 2(R1)
+	RTS
+; Methode Equals
+code.Object.equals:
+	PUSH R2
+	PUSH R3
+	LOAD -2(LB), R2
+	LOAD -3(LB), R3
+	CMP R2, R3
+	BEQ true
+	ADD #0, R0
+	BRA fin
+true:
+	ADD #0, R0
+fin:
+	BRA fin.Object.equals
+	WSTR "Erreur: sortie de la méthode equals sans return"
+	WNL
+	ERROR
+fin.Object.equals:
+	POP R3
+	POP R2
+	RTS
+pile_pleine:
+	WSTR "Erreur: la pile est pleine"
+	WNL
+	ERROR
+dereferencement_null:
+	WSTR "Erreur: dereferencement de null"
+	WNL
+	ERROR
+tas_plein:
+	WSTR "Erreur: allocation impossible, tas plein"
+	WNL
+	ERROR
+; end main program

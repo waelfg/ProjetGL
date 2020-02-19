@@ -1,0 +1,17 @@
+class A extends B {
+  int x;
+  int y;
+	void A(int i, int j){
+		this.x=i;
+		this.y=j;	
+} 
+	float add(){
+	float a= (float)(this.x + this.y);
+	return a;
+}
+}
+{
+	A first = new A();
+	first.add();
+	}
+

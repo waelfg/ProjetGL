@@ -1,0 +1,7 @@
+//affichage en flotant de la moitié d'un carré d'un entier
+
+{
+  int x ;
+
+  println(0.5*(x*x)) ; 
+}

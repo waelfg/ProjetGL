@@ -1,0 +1,16 @@
+// Description:
+//          Utilisation de l'opérateur unaire - sur entier et flottant
+//
+// Résultat:
+//          Succès
+//
+{
+    int a = 4;
+    int b = -2;
+    int c = -a;
+
+    float d = 8.2;
+    float e = -17.46;
+    float f = -d;
+
+}

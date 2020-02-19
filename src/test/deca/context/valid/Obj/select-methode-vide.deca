@@ -1,0 +1,13 @@
+// Description:
+//     Sélection d'une méthode dans le main
+//
+// Résultat:
+//    Succès
+//
+class A {
+    void methode(){}
+}
+{
+    A a;
+    a.methode();
+}

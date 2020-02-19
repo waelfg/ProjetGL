@@ -1,0 +1,12 @@
+//Description : field access with multiple floats
+//
+class A {
+    float n = 0.0  ;
+
+
+}
+{
+    A a = new A() ;
+    println(a.n);
+
+}

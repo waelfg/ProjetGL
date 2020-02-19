@@ -1,0 +1,17 @@
+// Description:
+//    Sélection d'une méthode à paramètres
+//
+// Résultat:
+//    Succès
+//
+class A {
+    float methode(float x, boolean bool){
+        return x;
+    }
+}
+{
+    A a;
+    float x = 2.5;
+    boolean bool = false;
+    a.methode(x, bool);
+}

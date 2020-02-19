@@ -1,0 +1,4 @@
+//Description : field boolean declaration
+class A {
+    boolean  n ;
+}

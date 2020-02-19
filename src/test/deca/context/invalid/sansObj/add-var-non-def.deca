@@ -1,0 +1,11 @@
+// Description:
+//    Addition entre un int et une variable non définie
+//
+// Résultat:
+//variable non definie
+// 
+
+{
+   int a;
+   a = a + b;
+}

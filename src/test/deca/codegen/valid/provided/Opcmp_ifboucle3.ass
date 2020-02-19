@@ -1,0 +1,474 @@
+; start main program
+; Début du programme
+	TSTO #1
+	BOV pile_pleine
+	ADDSP #1
+; Main program
+; Beginning of main instructions:
+	TSTO #1
+	BOV pile_pleine
+	ADDSP #1
+	LOAD #2, R2
+	LOAD #1, R3
+	CMP R3, R2
+	BGT great1
+	LOAD #0, R3
+	BRA Fin_great1
+great1:
+	LOAD #1, R3
+Fin_great1:
+	CMP #0, R3
+	BEQ else11
+	LOAD #2, R2
+	PUSH R2
+	LOAD #3, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower2
+	LOAD #0, R2
+	BRA Fin_lower2
+lower2:
+	LOAD #1, R2
+Fin_lower2:
+	CMP #0, R2
+	BEQ else12
+	PUSH R2
+	LOAD #3, R2
+	PUSH R2
+	LOAD #4, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower3
+	LOAD #0, R2
+	BRA Fin_lower3
+lower3:
+	LOAD #1, R2
+Fin_lower3:
+	CMP #0, R2
+	BEQ else13
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower4
+	LOAD #0, R2
+	BRA Fin_lower4
+lower4:
+	LOAD #1, R2
+Fin_lower4:
+	CMP #0, R2
+	BEQ else14
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower5
+	LOAD #0, R2
+	BRA Fin_lower5
+lower5:
+	LOAD #1, R2
+Fin_lower5:
+	CMP #0, R2
+	BEQ else15
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower6
+	LOAD #0, R2
+	BRA Fin_lower6
+lower6:
+	LOAD #1, R2
+Fin_lower6:
+	CMP #0, R2
+	BEQ else16
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower7
+	LOAD #0, R2
+	BRA Fin_lower7
+lower7:
+	LOAD #1, R2
+Fin_lower7:
+	CMP #0, R2
+	BEQ else17
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower8
+	LOAD #0, R2
+	BRA Fin_lower8
+lower8:
+	LOAD #1, R2
+Fin_lower8:
+	CMP #0, R2
+	BEQ else18
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower9
+	LOAD #0, R2
+	BRA Fin_lower9
+lower9:
+	LOAD #1, R2
+Fin_lower9:
+	CMP #0, R2
+	BEQ else19
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower10
+	LOAD #0, R2
+	BRA Fin_lower10
+lower10:
+	LOAD #1, R2
+Fin_lower10:
+	CMP #0, R2
+	BEQ else110
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower11
+	LOAD #0, R2
+	BRA Fin_lower11
+lower11:
+	LOAD #1, R2
+Fin_lower11:
+	CMP #0, R2
+	BEQ else111
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower12
+	LOAD #0, R2
+	BRA Fin_lower12
+lower12:
+	LOAD #1, R2
+Fin_lower12:
+	CMP #0, R2
+	BEQ else112
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower13
+	LOAD #0, R2
+	BRA Fin_lower13
+lower13:
+	LOAD #1, R2
+Fin_lower13:
+	CMP #0, R2
+	BEQ else113
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower14
+	LOAD #0, R2
+	BRA Fin_lower14
+lower14:
+	LOAD #1, R2
+Fin_lower14:
+	CMP #0, R2
+	BEQ else114
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower15
+	LOAD #0, R2
+	BRA Fin_lower15
+lower15:
+	LOAD #1, R2
+Fin_lower15:
+	CMP #0, R2
+	BEQ else115
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower16
+	LOAD #0, R2
+	BRA Fin_lower16
+lower16:
+	LOAD #1, R2
+Fin_lower16:
+	CMP #0, R2
+	BEQ else116
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower17
+	LOAD #0, R2
+	BRA Fin_lower17
+lower17:
+	LOAD #1, R2
+Fin_lower17:
+	CMP #0, R2
+	BEQ else117
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower18
+	LOAD #0, R2
+	BRA Fin_lower18
+lower18:
+	LOAD #1, R2
+Fin_lower18:
+	CMP #0, R2
+	BEQ else118
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower19
+	LOAD #0, R2
+	BRA Fin_lower19
+lower19:
+	LOAD #1, R2
+Fin_lower19:
+	CMP #0, R2
+	BEQ else119
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower20
+	LOAD #0, R2
+	BRA Fin_lower20
+lower20:
+	LOAD #1, R2
+Fin_lower20:
+	CMP #0, R2
+	BEQ else120
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower21
+	LOAD #0, R2
+	BRA Fin_lower21
+lower21:
+	LOAD #1, R2
+Fin_lower21:
+	CMP #0, R2
+	BEQ else121
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower22
+	LOAD #0, R2
+	BRA Fin_lower22
+lower22:
+	LOAD #1, R2
+Fin_lower22:
+	CMP #0, R2
+	BEQ else122
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower23
+	LOAD #0, R2
+	BRA Fin_lower23
+lower23:
+	LOAD #1, R2
+Fin_lower23:
+	CMP #0, R2
+	BEQ else123
+	PUSH R2
+	LOAD #4, R2
+	PUSH R2
+	LOAD #5, R2
+	LOAD R2, R0
+	POP R2
+	CMP R0, R2
+	BLT lower24
+	LOAD #0, R2
+	BRA Fin_lower24
+lower24:
+	LOAD #1, R2
+Fin_lower24:
+	CMP #0, R2
+	BEQ else124
+	WSTR "Test des limites de la gestion de pile et des registres"
+	WNL
+	BRA fin_if124
+else124:
+fin_if124:
+	BRA fin_if123
+else123:
+fin_if123:
+	BRA fin_if122
+else122:
+fin_if122:
+	BRA fin_if121
+else121:
+fin_if121:
+	BRA fin_if120
+else120:
+fin_if120:
+	BRA fin_if119
+else119:
+fin_if119:
+	BRA fin_if118
+else118:
+fin_if118:
+	BRA fin_if117
+else117:
+fin_if117:
+	BRA fin_if116
+else116:
+fin_if116:
+	BRA fin_if115
+else115:
+fin_if115:
+	BRA fin_if114
+else114:
+fin_if114:
+	BRA fin_if113
+else113:
+fin_if113:
+	BRA fin_if112
+else112:
+fin_if112:
+	BRA fin_if111
+else111:
+fin_if111:
+	BRA fin_if110
+else110:
+fin_if110:
+	BRA fin_if19
+else19:
+fin_if19:
+	BRA fin_if18
+else18:
+fin_if18:
+	BRA fin_if17
+else17:
+fin_if17:
+	BRA fin_if16
+else16:
+fin_if16:
+	BRA fin_if15
+else15:
+fin_if15:
+	BRA fin_if14
+else14:
+fin_if14:
+	BRA fin_if13
+else13:
+fin_if13:
+	BRA fin_if12
+else12:
+fin_if12:
+	BRA fin_if11
+else11:
+fin_if11:
+	HALT
+; Methode Equals
+code.Object.equals:
+	PUSH R2
+	PUSH R3
+	LOAD -2(LB), R2
+	LOAD -3(LB), R3
+	CMP R2, R3
+	BEQ true
+	ADD #0, R0
+	BRA fin
+true:
+	ADD #0, R0
+fin:
+	BRA fin.Object.equals
+	WSTR "Erreur: sortie de la méthode equals sans return"
+	WNL
+	ERROR
+fin.Object.equals:
+	POP R3
+	POP R2
+	RTS
+pile_pleine:
+	WSTR "Erreur: la pile est pleine"
+	WNL
+	ERROR
+dereferencement_null:
+	WSTR "Erreur: dereferencement de null"
+	WNL
+	ERROR
+tas_plein:
+	WSTR "Erreur: allocation impossible, tas plein"
+	WNL
+	ERROR
+; end main program

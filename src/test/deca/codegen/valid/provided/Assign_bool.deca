@@ -1,0 +1,8 @@
+//Description
+//
+{
+    boolean a = true ;
+    boolean c = false ;
+    print(a) ; 
+    print(b) ; 
+}

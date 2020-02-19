@@ -1,0 +1,4 @@
+class A {
+ int value;
+ int x = 1;
+}

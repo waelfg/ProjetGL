@@ -1,0 +1,12 @@
+//Description
+//
+{
+    float x = 2.0 ; 
+    float y = 2.0 ;   
+    if (x==y){
+        print("condition 1");
+    }
+    else {
+        print ("condition 2") ;
+    }
+}

@@ -1,0 +1,9 @@
+// Description:
+//          println d'un string
+//
+// Résultat:
+//Succès
+//
+{
+        println("Hello");
+}

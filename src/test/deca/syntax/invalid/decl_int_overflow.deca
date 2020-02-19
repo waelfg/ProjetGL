@@ -1,0 +1,9 @@
+//  Description :
+//            Déclaration d'un entier trop grand
+//
+// Résultat:
+//?
+//
+{
+    int x = 12345678912;
+}

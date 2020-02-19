@@ -1,0 +1,20 @@
+// Description:
+//    Déclaration d'une classe avec champs et méthodes
+//
+// Résultat:
+//    Succès
+//
+class A {
+    int a;
+    float b;
+    boolean c;
+
+    int getA(){
+        return this.a;
+    }
+
+    float setB(float x){
+        this.b = x;
+    }
+}
+{}

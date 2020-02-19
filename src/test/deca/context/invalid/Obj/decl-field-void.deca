@@ -1,0 +1,10 @@
+// Description:
+//    Déclaration d'un champ de type void
+//
+// Résultat:
+//On ne peut pas avoir de champ de type null ou void
+//
+class A {
+    void a;
+}
+{}

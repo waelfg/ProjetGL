@@ -1,0 +1,13 @@
+// Description:
+//    Affectation de deux int entre eux
+//
+// Résultat:
+//    Succès
+//
+{
+   int a;
+   int b;
+
+   // Doit etre accepté.
+   a = b;
+}

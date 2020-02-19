@@ -1,0 +1,27 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #2, R2
+	STORE R2, 1(GB)
+	LOAD #1, R2
+	STORE R2, 2(GB)
+	LOAD 1(GB), R2
+	PUSH R2
+	LOAD 2(GB), R2
+	CMP R2, R2
+	BEQ eq1
+	LOAD #0, R2
+	BRA Fin_eq1
+eq1:
+	LOAD #1, R2
+Fin_eq1:
+	CMP #0, R2
+	CMP #0, R2
+	BEQ else1
+	WSTR "condition 1"
+	BRA fin_if1
+else1:
+	WSTR "condition 2"
+fin_if1:
+	HALT
+; end main program

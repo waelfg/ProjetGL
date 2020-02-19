@@ -1,0 +1,15 @@
+//Description : test des setters
+//
+class A {
+    boolean x  ;
+
+    void setX(boolean cond) {
+        this.x = cond ;
+    }
+}
+
+{
+      A a = new A() ;
+      a.setX(true);
+      println(a.x);
+}

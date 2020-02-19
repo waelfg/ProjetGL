@@ -1,0 +1,13 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #1, R2
+	CMP #1, R2
+	BNE Faux
+	LOAD #0, R2
+	BRA Fin
+Faux:
+	LOAD #1, R2
+Fin:
+	HALT
+; end main program

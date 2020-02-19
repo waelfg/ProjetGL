@@ -1,0 +1,9 @@
+//  Description :
+//            Utilisation de || avec un seul terme
+//
+// Résultat:
+//mismatched input ';'
+//
+{
+    x ||;
+}

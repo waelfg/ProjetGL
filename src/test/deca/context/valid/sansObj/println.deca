@@ -1,0 +1,11 @@
+// Description:
+//    Println sur un entier, un flottant et plusieurs arguments d'un coup
+//
+// Résultat:
+//    Succès
+//
+{
+        println(3);
+        println(4.5);
+        println("Nous sommes en ", 2020);
+}

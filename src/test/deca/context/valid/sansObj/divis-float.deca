@@ -1,0 +1,12 @@
+// Description:
+//          Division sur des flottants
+//
+// Résultat:
+//          Succès
+//
+{
+    float a = 25.8/2;
+    float b = 3.9;
+    float c = 9.1;
+    a = 9/3;
+}

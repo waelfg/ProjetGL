@@ -1,0 +1,15 @@
+// Description:
+//    Utilisation d'une méthode avec un int à la place d'un float
+//
+// Résultat:
+//    Succès
+//
+class A {
+    void methode(float x){}
+
+}
+{
+    A a;
+    int n = 5;
+    a.methode(n);
+}

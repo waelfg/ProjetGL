@@ -1,0 +1,13 @@
+// Description:
+//    Redéfinition d'un champ à l'intérieur d'une méthode
+//
+// Résultat:
+//Une autre variable déjà déclarée a le même nom
+//
+class A {
+    int a;
+    void methode(){
+    float a;
+    }
+}
+{}

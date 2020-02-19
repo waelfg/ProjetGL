@@ -1,0 +1,8 @@
+// Description:
+//      Déclaration d'une variable sans nom
+//
+//  Résultat:
+//no viable alternative at input 'int'
+
+    int;
+}

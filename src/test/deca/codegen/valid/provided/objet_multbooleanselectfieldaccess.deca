@@ -1,0 +1,12 @@
+//Description : Test de l'affectation après sélection de l'attribut
+//
+class C {
+    boolean x ;
+    boolean y ;
+}
+
+{
+    C c = new C() ;
+    c.x = true ;
+    c.y = false ;
+}

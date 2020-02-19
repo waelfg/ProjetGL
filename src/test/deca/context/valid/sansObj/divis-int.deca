@@ -1,0 +1,12 @@
+// Description:
+//          Division sur des entiers
+//
+// Résultat:
+//          Succès
+//
+{
+    int a = 10/5;
+    int b = 3;
+    int c = 9;
+    a = 9/3;
+}

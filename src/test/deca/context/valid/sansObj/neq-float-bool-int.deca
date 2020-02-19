@@ -1,0 +1,23 @@
+// Description:
+//          Test d'inégalité sur des flottants, des booléens et des entiers, et sur des entiers convertis en flottants
+//
+// Résultat:
+//          Succès
+//
+{
+    float a = 2.5;
+    float b = 6.8;
+    boolean c = true;
+    boolean d = false;
+    int e = 8;
+    int f = 10;
+
+    if (a != b){}
+
+    if (c != d){}
+
+    if (e != f){}
+
+    if (e != a){}
+    if (b != f){}
+}

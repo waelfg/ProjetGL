@@ -1,0 +1,9 @@
+// Description:
+//    Déclaration d'une classe qui étend une autre classe
+//
+// Résultat:
+//    Succès
+//
+class A {}
+class B extends A {}
+{}

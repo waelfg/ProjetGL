@@ -1,0 +1,9 @@
+// Description:
+//          Affectation d'un readInt() à un booléen
+//
+// Résultat:
+//right value int expected boolean
+{
+    boolean bool;
+    bool = readInt();
+}

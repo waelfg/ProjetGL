@@ -1,0 +1,11 @@
+// Description:
+//    return à l'intérieur du main
+//
+// Résultat:
+//On ne peut pas faire de return dans la main ou dans une classe qui doit renvoyer void
+//
+class A {
+}
+{
+    return 2;
+}

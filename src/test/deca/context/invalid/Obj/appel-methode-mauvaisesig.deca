@@ -1,0 +1,13 @@
+// Description:
+//    Appel à une méthode avec une mauvaise signature
+//
+// Résultat:
+//Le nombre de paramètres de la méthode appeléene correspond pas à celui de la méthode déclarée
+//
+class A {
+    void methode(){}
+}
+{
+    A a = new A();
+    a.methode(5);
+}

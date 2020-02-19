@@ -1,0 +1,22 @@
+//Description : Test de l'accès aux attributs après héritage
+//
+class A {
+    int x = 1 ;
+    int y = 2 ;
+}
+
+class B extends A {
+    int z = 3 ;
+}
+
+class C extends B {
+    int g = 4 ;
+}
+
+{
+    C c = new C();
+    println(c.x);
+    println(c.y);
+    println(c.z);
+    println(c.g);
+}

@@ -1,0 +1,11 @@
+// Description:
+//    Déclaration d'une variable de type void
+//
+// Résultat:
+//can't define a void
+//
+{
+   void a;
+   boolean b;
+   a = a + b;
+}

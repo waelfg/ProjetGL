@@ -1,0 +1,9 @@
+// Description:
+//    Utilisation de new sur une classe non déclarée
+//
+// Résultat:
+//type non défini
+//
+{
+    A a = new A();
+}

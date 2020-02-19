@@ -1,0 +1,16 @@
+// Description:
+//    Déclaration d'une classe avec champs sans méthode
+//
+// Résultat:
+//    Succès
+//
+class A {
+    int a;
+    float b;
+    boolean c;
+    protected int d;
+}
+{
+    A x;
+    int n = x.a;
+}

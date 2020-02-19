@@ -1,0 +1,11 @@
+// Description:
+//    Déclaration d'un champ déjà déclaré
+//
+// Résultat:
+//Un champ ou une méthode a déjà le même nom dans cette classe
+//
+class A {
+    int a;
+    boolean a;
+}
+{}

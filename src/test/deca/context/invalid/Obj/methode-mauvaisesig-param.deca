@@ -1,0 +1,13 @@
+// Description:
+//    Redéfinition d'une méthode avec une mauvaise signature
+//
+// Résultat:
+//La signature de la méthode à définir  ne correspond pas à celle de la méthode héritée
+//
+class A {
+    void methode(int a){}
+}
+class B extends A{
+    void methode(){}
+}
+{}

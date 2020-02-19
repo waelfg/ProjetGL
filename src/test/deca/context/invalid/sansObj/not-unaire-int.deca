@@ -1,0 +1,10 @@
+// Description:
+//          Utilisation du not unaire sur un int
+//
+// Résultat:
+//L'opérateur Not doit être utilisé sur un booléen
+//
+{
+    int a = 10;
+    if (!a){}
+}

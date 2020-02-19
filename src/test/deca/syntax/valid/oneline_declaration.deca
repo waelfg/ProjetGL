@@ -1,0 +1,10 @@
+// Description:
+//          Déclaration de plusieurs entiers sur une seule ligne
+//
+// Résultat:
+//Succès
+//
+{
+    int a , b ; 
+    int c = 1 , d = 2 ; 
+}

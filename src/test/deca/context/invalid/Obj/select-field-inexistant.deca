@@ -1,0 +1,13 @@
+// Description:
+//    Sélection d'un champ non déclaré dans la classe;
+//
+// Résultat:
+//Le champ n'est pas défini
+//
+class A{
+    void methode(){}
+}
+{
+    A a = new A();
+    float x = a.champ;
+}

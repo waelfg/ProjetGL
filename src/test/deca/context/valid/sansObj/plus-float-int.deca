@@ -1,0 +1,11 @@
+// Description:
+//          Addition entre un entier et un flottant
+//
+// Résultat:
+//          Succès
+//
+{
+    float a = 2.3;
+    int b = 4;
+    a = a + b;
+}

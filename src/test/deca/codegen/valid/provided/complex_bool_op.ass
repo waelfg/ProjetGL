@@ -1,0 +1,104 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #1, R2
+	PUSH R2
+	LOAD #0, R2
+	LOAD R2, R0
+	POP R2
+	CMP #0, R0
+	BEQ Faux_and0
+	CMP #0, R2
+	BEQ Faux_and0
+	LOAD #1, R0
+	BRA Vrai_and0
+Faux_and0:
+	LOAD #0, R0
+Vrai_and0:
+	PUSH R2
+	LOAD #0, R2
+	PUSH R2
+	LOAD #1, R2
+	LOAD R2, R0
+	POP R2
+	CMP #0, R0
+	BEQ Faux_and1
+	CMP #0, R2
+	BEQ Faux_and1
+	LOAD #1, R0
+	BRA Vrai_and1
+Faux_and1:
+	LOAD #0, R0
+Vrai_and1:
+	PUSH R2
+	LOAD #1, R2
+	LOAD R2, R0
+	POP R2
+	CMP #0, R0
+	BEQ Faux_and2
+	CMP #0, R2
+	BEQ Faux_and2
+	LOAD #1, R0
+	BRA Vrai_and2
+Faux_and2:
+	LOAD #0, R0
+Vrai_and2:
+	LOAD R2, R0
+	POP R2
+	CMP #1, R0
+	BEQ Vrai_or3
+	CMP #1, R2
+	BEQ Vrai_or3
+	LOAD #0, R0
+	BRA Fin_or3
+Vrai_or3:
+	LOAD #1, R2
+Fin_or3:
+	PUSH R2
+	LOAD #1, R2
+	LOAD R2, R0
+	POP R2
+	CMP #1, R0
+	BEQ Vrai_or4
+	CMP #1, R2
+	BEQ Vrai_or4
+	LOAD #0, R0
+	BRA Fin_or4
+Vrai_or4:
+	LOAD #1, R2
+Fin_or4:
+	PUSH R2
+	LOAD #0, R2
+	PUSH R2
+	LOAD #1, R2
+	CMP #1, R2
+	BNE Faux
+	LOAD #0, R2
+	BRA Fin
+Faux:
+	LOAD #1, R2
+Fin:
+	LOAD R2, R0
+	POP R2
+	CMP #0, R0
+	BEQ Faux_and5
+	CMP #0, R2
+	BEQ Faux_and5
+	LOAD #1, R0
+	BRA Vrai_and5
+Faux_and5:
+	LOAD #0, R0
+Vrai_and5:
+	LOAD R2, R0
+	POP R2
+	CMP #1, R0
+	BEQ Vrai_or6
+	CMP #1, R2
+	BEQ Vrai_or6
+	LOAD #0, R0
+	BRA Fin_or6
+Vrai_or6:
+	LOAD #1, R2
+Fin_or6:
+	HALT
+; end main program

@@ -1,0 +1,9 @@
+// Description:
+//          Utilisation du not unaire sur un string
+//
+// Résultat:
+//L'opérateur Not doit être utilisé sur un booléen
+//
+{
+    if (!"non-booléen"){}
+}

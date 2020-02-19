@@ -1,0 +1,14 @@
+// Description:
+//    Affectation d'un int à un float, conversion de l'int en float
+//
+// Résultat:
+//    Succès
+//
+
+{
+   float a;
+   int b;
+
+   // Doit etre accepté et converti en float.
+   a = b;
+}

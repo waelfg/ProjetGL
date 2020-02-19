@@ -1,0 +1,13 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #0, R2
+	CMP #0, R2
+	CMP #0, R2
+	BEQ else1
+	WSTR "yes"
+	BRA fin_if1
+else1:
+fin_if1:
+	HALT
+; end main program

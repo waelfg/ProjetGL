@@ -1,0 +1,6 @@
+//Description : Empty new class
+//
+class A {}
+{
+    A a = new A();
+}

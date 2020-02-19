@@ -1,0 +1,19 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #1, R1
+	STORE R1, 1(GB)
+	LOAD #0, R1
+	STORE R1, 2(GB)
+	LOAD 2(GB), R1
+	CMP #0, R1
+	BEQ else
+	WSTR "b is true"
+	WNL
+	BRA fin
+else:
+	WSTR "a is true"
+	WNL
+fin:
+	HALT
+; end main program

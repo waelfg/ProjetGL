@@ -1,0 +1,12 @@
+//Description
+//
+{
+    float x = 1.0 ;  
+    float y = 3.0 ; 
+    if (x>1.01 || y!=3.0) {
+        print("Condition 1");
+    }
+    else {
+        print("Condition 2") ;
+    }
+}

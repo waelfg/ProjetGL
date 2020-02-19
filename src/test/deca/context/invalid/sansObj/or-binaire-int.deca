@@ -1,0 +1,11 @@
+// Description:
+//          Utilisation de l'opérateur || avec un int et un bool
+//
+// Résultat:
+//Le terme de droite n'est pas un booléen
+//
+{
+    boolean a = false;
+    int b = 5;
+    boolean c = (a || b);
+}

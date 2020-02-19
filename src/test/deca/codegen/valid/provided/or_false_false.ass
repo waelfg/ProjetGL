@@ -1,0 +1,24 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #0, R2
+	STORE R2, 1(GB)
+	PUSH R2
+	LOAD #0, R2
+	STORE R2, 2(GB)
+	PUSH R2
+	LOAD 1(GB), R2
+	PUSH R2
+	LOAD 2(GB), R2
+	CMP #1, R2
+	BEQ Vrai_or0
+	CMP #1, R2
+	BEQ Vrai_or0
+	LOAD #0, R2
+	BRA Fin_or0
+Vrai_or0:
+	LOAD #1, R2
+Fin_or0:
+	STORE R2, 3(GB)
+	HALT
+; end main program

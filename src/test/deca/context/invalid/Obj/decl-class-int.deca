@@ -1,0 +1,8 @@
+// Description:
+//    Déclaration d'une classe int
+//
+// Résultat:
+//Une autre classe du même nom a déjà été définie
+//
+class int {}
+{}

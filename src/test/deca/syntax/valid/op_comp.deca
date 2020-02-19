@@ -1,0 +1,17 @@
+// Description:
+//          Utilisation des différents comparateurs binaires
+//
+// Résultat:
+//Succès
+//
+{
+    int n = 3;
+    int m = 4;
+    boolean q;
+    q = n > m;
+    q = n >= m;
+    q = n < m;
+    q = n <= m;
+    q = n == m;
+    q = n != m;
+}

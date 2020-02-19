@@ -1,0 +1,10 @@
+// Description:
+//    Définition d'une méthode avec un paramètre de type inconnu
+//
+// Résultat:
+//Le type du paramètre n'est pas défini
+//
+class A {
+    void methode(inconnu a){}
+}
+{}

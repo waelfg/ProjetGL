@@ -1,0 +1,55 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #0x1.8p2, R2
+	STORE R2, 1(GB)
+	LOAD #0, R2
+	STORE R2, 2(GB)
+	ADDSP #3
+while0:
+	LOAD 1(GB), R2
+	LOAD #5, R3
+	FLOAT R3, R3
+	CMP R3, R2
+	BGT great1
+	LOAD #0, R3
+	BRA Fin_great1
+great1:
+	LOAD #1, R3
+Fin_great1:
+	LOAD 1(GB), R2
+	LOAD #10, R4
+	FLOAT R4, R4
+	CMP R4, R2
+	BLT lower2
+	LOAD #0, R4
+	BRA Fin_lower2
+lower2:
+	LOAD #1, R4
+Fin_lower2:
+	CMP #0, R3
+	BEQ Faux_and1
+	CMP #0, R4
+	BEQ Faux_and1
+	LOAD #1, R3
+	BRA Vrai_and1
+Faux_and1:
+	LOAD #0, R3
+Vrai_and1:
+	CMP #1, R3
+	BNE Finw0
+	LOAD 2(GB), R2
+	LOAD #1, R5
+	SUB R5, R2
+	STORE R2, 2(GB)
+	LOAD 1(GB), R5
+	LOAD #1, R6
+	FLOAT R6, R6
+	SUB R6, R5
+	STORE R5, 1(GB)
+	LOAD 1(GB), R1
+	WFLOAT
+	BRA while0
+Finw0:
+	HALT
+; end main program

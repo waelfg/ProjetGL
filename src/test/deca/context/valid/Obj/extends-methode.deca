@@ -1,0 +1,14 @@
+// Description:
+//    Déclaration d'une classe qui étend une autre classe et appel à une méthode de la superclasse
+//
+// Résultat:
+//    Succès
+//
+class A {
+    void methode(){}
+}
+class B extends A{}
+{
+    B b;
+    b.methode();
+}

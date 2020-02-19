@@ -1,0 +1,10 @@
+//  Description :
+//            Deux signes * d'affilés
+//
+// Résultat:
+//extraneous input '*'
+//
+{
+    int a = 2 ; 
+    int b = a ** 2 ; 
+}

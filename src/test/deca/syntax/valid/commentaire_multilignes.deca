@@ -1,0 +1,11 @@
+// Description:
+//          Commentaire multi-lignes
+//
+// Résultat:
+//Succès
+//
+{
+    /* commentaire
+    commentaire
+    commentaire */
+}

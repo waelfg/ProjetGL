@@ -1,0 +1,8 @@
+// Description:
+//    Déclaration d'une classe qui hérite des booléens
+//
+// Résultat:
+//La superclasse donnée n'est pas une classe
+//
+class A extends boolean{}
+{}

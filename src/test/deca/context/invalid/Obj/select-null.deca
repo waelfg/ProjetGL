@@ -1,0 +1,9 @@
+// Description:
+//    Selection d'un champ ou d'une méthode de null
+//
+// Résultat:
+//Ne doit pas passer
+//
+{
+    int a = null.x;
+}

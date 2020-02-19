@@ -1,0 +1,7 @@
+//  Description :
+//            Inclusion d'un fichier inexistant
+//
+// Résultat:
+//include file not found
+//
+#include "fichier_inexistant.deca"

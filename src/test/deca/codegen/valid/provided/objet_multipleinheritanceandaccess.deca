@@ -1,0 +1,34 @@
+//Description : Test de l'accès aux attributs après héritage
+//
+class A {
+    int x = 1 ;
+    int y = 2 ;
+}
+
+class B extends A {
+    int z = 3 ;
+}
+
+class C extends B {
+    int g = 4 ;
+}
+
+class D extends C {}
+
+class E extends D {
+    float s = 6.0 ;
+}
+
+class F extends E {
+    boolean q = true ;
+}
+
+{
+    F f = new F();
+    println(f.x);
+    println(f.y);
+    println(f.z);
+    println(f.g);
+    println(f.s);
+    println(f.q);
+}

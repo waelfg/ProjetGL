@@ -1,0 +1,9 @@
+//  Description :
+//            Initialisation d'une variable sans terme à droite du égal
+//
+// Résultat:
+//mismatched input ';'
+//
+{
+    boolean x = ;
+}

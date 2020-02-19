@@ -1,0 +1,19 @@
+// Description:
+//          Déclaration de flottants, de booléens et d'entiers
+//
+// Résultat:
+//          Succès
+//
+{
+    float a;
+    float b = 4.2;
+    float c, d;
+
+    boolean e;
+    boolean f = false;
+    boolean g, h;
+
+    int i;
+    int j = 18;
+    int k, l;
+}

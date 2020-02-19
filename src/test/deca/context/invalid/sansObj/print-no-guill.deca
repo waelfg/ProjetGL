@@ -1,0 +1,10 @@
+// Description:
+//    Print d'une variable non définie
+//
+// Résultat:
+//variable non definie
+
+
+{
+        println(Hello);
+}

@@ -1,0 +1,10 @@
+// Description:
+//    Utilisation de this dans le main
+//
+// Résultat:
+//this ne peut être appelé que dans une classe
+//
+{
+    float x = 8.6;
+    float y = this.b;
+}

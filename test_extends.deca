@@ -1,0 +1,20 @@
+class A {
+	int value;
+	protected int args;
+
+	int getValue(){
+		return value;	
+}
+
+}
+
+
+
+{
+	int x;
+	int y =1;
+	int z = 2;
+	print(1+2);
+	print(y+z);
+}
+

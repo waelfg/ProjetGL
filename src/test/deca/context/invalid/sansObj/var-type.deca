@@ -1,0 +1,10 @@
+// Description:
+//      Déclaration d'une variable d'un type qui a le nom d'une variable
+//
+// Résultat:
+//type non défini
+//
+{
+    int a;
+    a b;
+}

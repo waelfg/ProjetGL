@@ -1,0 +1,9 @@
+//  Description :
+//            Deux ; séparés seulement par un espace sur la même ligne
+//
+// Résultat:
+//Ne doit pas passer
+//
+{
+    int a ;;
+}

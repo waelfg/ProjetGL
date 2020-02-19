@@ -1,0 +1,9 @@
+// Description:
+//          Affectation d'un readInt() à un int
+//
+// Résultat:
+//          Succès
+{
+    int a;
+    a = readInt();
+}

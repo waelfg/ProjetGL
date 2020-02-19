@@ -1,0 +1,9 @@
+// Description:
+//    Selection d'un champ ou d'une méthode d'un type
+//
+// Résultat:
+//On ne peut appeler un champ d'un objetqui n'est pas une classe
+//
+{
+    int a = boolean.x;
+}

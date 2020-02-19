@@ -1,0 +1,13 @@
+// Description:
+//    Utilisation du this au sein d'une classe
+//
+// Résultat:
+//    Succès
+//
+class A {
+    int a;
+    void methode(){
+        this.a = 5;
+    }
+}
+{}

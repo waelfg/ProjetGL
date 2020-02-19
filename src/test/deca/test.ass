@@ -1,0 +1,91 @@
+; start main program
+	BRA Deb_prog
+; Début du programme
+Deb_prog:
+	LOAD #null, R0
+	STORE R0, 1(GB)
+	LOAD code.Object.equals, R0
+	STORE R0, 2(GB)
+	TSTO #1
+	BOV pile_pleine
+	ADDSP #1
+; Main program
+; Beginning of main instructions:
+	LOAD #0, R2
+	STORE R2, 1(GB)
+	TSTO #2
+	BOV pile_pleine
+	ADDSP #2
+	WSTR "choisissez une opération"
+	RINT
+	LOAD R1, R2
+	STORE R2, 1(GB)
+	LOAD 1(GB), R3
+	LOAD #0, R4
+	CMP R4, R3
+	BGE greateq1
+	LOAD #0, R4
+	BRA Fin_greateq1
+greateq1:
+	LOAD #1, R4
+Fin_greateq1:
+	LOAD 1(GB), R3
+	LOAD #5, R5
+	CMP R5, R3
+	BLE lowereq2
+	LOAD #0, R5
+	BRA Fin_lowereq2
+lowereq2:
+	LOAD #1, R5
+Fin_lowereq2:
+	CMP #0, R4
+	BEQ Faux_and1
+	CMP #0, R5
+	BEQ Faux_and1
+	LOAD #1, R4
+	BRA Vrai_and1
+Faux_and1:
+	LOAD #0, R4
+Vrai_and1:
+	CMP #0, R4
+	BEQ else11
+	WSTR "x est dans l’intervalle [0, 5]"
+	BRA fin_if11
+else11:
+	WSTR "x n’est pas dans l’intervalle [0, 5]"
+fin_if11:
+	HALT
+; Methode Equals
+code.Object.equals:
+	PUSH R2
+	PUSH R3
+	LOAD -2(LB), R2
+	LOAD -3(LB), R3
+	CMP R2, R3
+	BEQ true
+	ADD #0, R0
+	BRA fin
+true:
+	ADD #0, R0
+fin:
+	BRA fin.Object.equals
+	WSTR "Erreur: sortie de la méthode equals sans return"
+	WNL
+	ERROR
+fin.Object.equals:
+	POP R3
+	POP R2
+	RTS
+pile_pleine:
+	WSTR "Erreur: la pile est pleine"
+	WNL
+	ERROR
+dereferencement_null:
+	WSTR "Erreur: dereferencement de null"
+	WNL
+	ERROR
+tas_plein:
+	WSTR "Erreur: allocation impossible, tas plein"
+	WNL
+	ERROR
+; end main program

@@ -1,0 +1,7 @@
+{
+
+    int a = 3 ;
+    int b = 2 ;
+    if(a>b) { print("conditionverifiee");}
+    else {print("condnonverifiee");}
+}

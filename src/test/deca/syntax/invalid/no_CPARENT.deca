@@ -1,0 +1,9 @@
+//  Description :
+//            Pas de ) à la fin du println
+//
+// Résultat:
+//missing ')' at ';'
+//
+{
+    println("Hello";
+}

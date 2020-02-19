@@ -1,0 +1,4 @@
+//Description : field float declaration
+class A {
+    float n ;
+}

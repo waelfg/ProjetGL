@@ -1,0 +1,8 @@
+//Description : Test du this avec les différents types
+//
+class A {
+    boolean x ;
+    boolean getX() {
+        return this.x ;
+    }
+}

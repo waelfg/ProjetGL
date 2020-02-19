@@ -1,0 +1,9 @@
+//  Description :
+//            Pas de ; après la déclaration d'une variable
+//
+// Résultat:
+//missing ';'
+//
+{
+    int a 
+}

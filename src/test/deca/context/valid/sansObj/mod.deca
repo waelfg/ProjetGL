@@ -1,0 +1,12 @@
+// Description:
+//          Utilisation de l'opérateur % sur des entiers
+//
+// Résultat:
+//          Succès
+//
+{
+    int a = 49;
+    int b = 7;
+    int c;
+    c = 49 % 7;
+}

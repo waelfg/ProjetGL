@@ -1,0 +1,9 @@
+// Description:
+//    Déclaration d'une classe qui a déjà été déclarée
+//
+// Résultat:
+//Une autre classe du même nom a déjà été définie
+//
+class A {}
+class A {}
+{}

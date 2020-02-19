@@ -1,0 +1,16 @@
+// Description:
+//          Structure ifthenelse correcte
+//
+// Résultat:
+//Succès
+//
+{
+    boolean a = true ;
+    boolean b = false ;
+    if (b) {
+                println("b is true") ; 
+    }
+
+    else {println("a is true");}
+
+}

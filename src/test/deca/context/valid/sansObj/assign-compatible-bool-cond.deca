@@ -1,0 +1,11 @@
+// Description:
+//    Affectation d'une condition à un booléen
+//
+// Résultat:
+//    Succès
+//
+{
+    boolean a;
+    int b = 23;
+    a = (b == 23);
+}

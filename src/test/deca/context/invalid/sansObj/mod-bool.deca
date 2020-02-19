@@ -1,0 +1,12 @@
+// Description:
+//          Modulo sur un int et un booléen
+//
+// Résultat:
+//Les deux termes doivent être des entiers
+//
+{
+    int a = 10;
+    boolean b = false;
+    int c;
+    c = a % b;
+}

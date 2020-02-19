@@ -1,0 +1,12 @@
+// Description:
+//    Return un float alors qu'elle attendait un boolean
+//
+// Résultat:
+//Le type renvoyé en pratique doit correspondre à un sous-type du type attendu
+//
+class A {
+    boolean methode(){
+        return 2.5;
+    }
+}
+{}

@@ -1,0 +1,13 @@
+// Description:
+//    Déclaration d'une variable au sein d'une méthode
+//
+// Résultat:
+//    Succès
+//
+class A {
+    void methode(){
+        int n = 5;
+        n = n + 1;
+    }
+}
+{}

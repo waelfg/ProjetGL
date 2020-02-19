@@ -1,0 +1,9 @@
+// Description:
+//    Println sans le guillemet gauche
+//
+// Résultat:
+//token recognition error
+
+{
+        println(Hello, world!");
+}

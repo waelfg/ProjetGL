@@ -1,0 +1,17 @@
+//Description
+//
+{
+    if (true && false || false ){
+        print("Condition 1");
+    }
+    else if (true && true){
+        print("Condition 2") ;
+    }
+    else if (false && false){
+        print("Condition 3");
+    }
+    else {
+        print("Condition 4");
+    }
+    
+}

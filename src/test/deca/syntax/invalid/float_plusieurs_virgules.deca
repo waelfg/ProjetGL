@@ -1,0 +1,9 @@
+//  Description :
+//            flottant ayant plusieurs virgules
+//
+// Résultat:
+//mismatched input '1234.1234' expecting IDENT
+//
+{
+1234.1234.1234.1234
+}

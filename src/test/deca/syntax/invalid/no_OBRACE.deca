@@ -1,0 +1,9 @@
+//  Description :
+//            Pas de { au début du fichier
+//
+// Résultat:
+//no viable alternative at input 'println'
+//
+
+   println("Hello") ; 
+}   

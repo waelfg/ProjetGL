@@ -1,0 +1,12 @@
+// Description:
+//    Utilisation d'un champ qui n'a pas été défini
+//
+// Résultat:
+//variable non definie
+//
+class A{
+    void field(){
+        champ = 0;
+    }
+}
+{}

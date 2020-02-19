@@ -1,0 +1,8 @@
+//Description : Test du this avec les différents types
+//
+class A {
+    float x ;
+    float getX() {
+        return this.x ;
+    }
+}

@@ -1,0 +1,11 @@
+// Description:
+//          Utilisation de l'opérateur >= avec un int et un boolean
+//
+// Résultat:
+//Comparaison entre deux membres incompatibles
+//
+{
+    int a = 10;
+    boolean b = true;
+    boolean c = (b >= a);
+}

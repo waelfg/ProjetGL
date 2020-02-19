@@ -1,0 +1,9 @@
+// Description:
+//      Déclaration d'une variable d'un type inconnu non déclaré auparavant
+//
+// Résultat:
+//type non défini
+//
+{
+    X x;
+}

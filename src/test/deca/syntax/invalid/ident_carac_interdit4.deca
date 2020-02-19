@@ -1,0 +1,9 @@
+//  Description :
+//            Identificateur contenant un ù
+//
+// Résultat:
+//token recognition error at: 'ù'
+//
+{
+identificateùr
+}

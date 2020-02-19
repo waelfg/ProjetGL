@@ -1,0 +1,9 @@
+//  Description :
+//            flottant commençant par plusieurs 0x
+//
+// Résultat:
+//no viable alternative at input 'x0x0x1234'
+//
+{
+    0x0x0x1234
+}

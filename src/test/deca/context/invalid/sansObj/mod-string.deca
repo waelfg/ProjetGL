@@ -1,0 +1,11 @@
+// Description:
+//          Modulo sur un int et un string
+//
+// Résultat:
+//Les deux termes doivent être des entiers
+//
+{
+    int a = 10;
+    int b;
+    b = a % "non-nombre";
+}

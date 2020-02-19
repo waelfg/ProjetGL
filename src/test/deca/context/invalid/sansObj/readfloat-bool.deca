@@ -1,0 +1,9 @@
+// Description:
+//          Affectation d'un readFloat() à un booléen
+//
+// Résultat:
+//right value float expected boolean
+{
+    boolean bool;
+    bool = readFloat();
+}

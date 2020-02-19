@@ -1,0 +1,9 @@
+//  Description :
+//            Identificateur commençant par un nombre
+//
+// Résultat:
+//no viable alternative at input 'identificateur'
+//
+{
+1identificateur
+}

@@ -1,0 +1,10 @@
+// Description:
+//    Cast entre deux types incompatibles
+//
+// Résultat:
+//?
+//
+{
+    int entier = 2;
+    boolean bool = (boolean) entier;
+}

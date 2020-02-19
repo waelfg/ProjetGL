@@ -1,0 +1,11 @@
+//Description
+//
+{
+    boolean a = true ;
+    if(!a){
+        print("Condition 1" );
+    }
+    else {
+        print("Condition 2");
+    }
+}

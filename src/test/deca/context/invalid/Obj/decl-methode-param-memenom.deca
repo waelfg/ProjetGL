@@ -1,0 +1,10 @@
+// Description:
+//    Définition d'une méthode avec deux paramètres de même nom
+//
+// Résultat:
+//Une autre variable déjà déclarée a le même nom
+//
+class A {
+    void methode(int a, boolean a){}
+}
+{}

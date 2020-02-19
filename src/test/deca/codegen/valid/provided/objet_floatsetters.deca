@@ -1,0 +1,15 @@
+//Description : test des setters
+//
+class A {
+    float x  ;
+
+    void setX(float flottant) {
+        x = flottant ;
+    }
+}
+
+{
+      A a = new A() ;
+      a.setX(10.0);
+      println(a.x);
+}

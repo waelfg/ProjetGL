@@ -1,0 +1,10 @@
+// Description:
+//          Utilisation de printlnx
+//
+// Résultat:
+//Succès
+//
+{
+    int a = 62 ; 
+    printlnx(a,"in hexadecimal");
+}

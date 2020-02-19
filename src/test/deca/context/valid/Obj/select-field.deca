@@ -1,0 +1,17 @@
+// Description:
+//    Sélection de champs
+//
+// Résultat:
+//    Succès
+//
+class A {
+    int n;
+    float x;
+    boolean bool;
+}
+{
+    A a;
+    int n = a.n;
+    float x = a.x;
+    boolean bool = a.bool;
+}

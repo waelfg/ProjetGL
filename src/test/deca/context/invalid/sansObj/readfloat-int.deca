@@ -1,0 +1,9 @@
+// Description:
+//          Affectation d'un readFloat() à un int
+//
+// Résultat:
+//right value float expected int
+{
+    int a;
+    a = readFloat();
+}

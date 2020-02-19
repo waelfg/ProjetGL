@@ -1,0 +1,8 @@
+// Description:
+//      String avec " manquant à la fin
+//
+// Resultats:
+//token recognition error
+//
+"chaine pas finie
+

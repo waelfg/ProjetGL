@@ -1,0 +1,8 @@
+{
+    if (false){
+    print("bla");
+    }
+    else {
+    print("right answer");
+    }
+}

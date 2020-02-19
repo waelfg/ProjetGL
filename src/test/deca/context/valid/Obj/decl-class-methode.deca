@@ -1,0 +1,14 @@
+// Description:
+//    Déclaration d'une classe sans champ avec méthodes
+//
+// Résultat:
+//    Succès
+//
+class A {
+    void methode(){}
+
+    int methode2(){
+        return 5;
+    }
+}
+{}

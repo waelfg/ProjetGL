@@ -1,0 +1,9 @@
+//  Description :
+//            Identificateur contenant un à
+//
+// Résultat:
+//token recognition error at: 'à'
+//
+{
+identificàteur
+}

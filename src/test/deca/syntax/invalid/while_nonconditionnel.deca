@@ -1,0 +1,9 @@
+//  Description :
+//            Structure while avec un while sans condition
+//
+// Résultat:
+//mismatched input '{' expecting '('
+//
+{
+    while {}
+}

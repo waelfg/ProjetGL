@@ -1,0 +1,9 @@
+//  Description :
+//            Structure while avec un while sans bloc d'instructions
+//
+// Résultat:
+//missing '{' at '}'
+//
+{
+    while (bool)
+}

@@ -1,0 +1,14 @@
+//Description : field access with boolean field
+//
+class A {
+    boolean n = true ;
+
+
+}
+{
+    A a = new A() ;
+    boolean b = a.n;
+    println(b);
+
+
+}

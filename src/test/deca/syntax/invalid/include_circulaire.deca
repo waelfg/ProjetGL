@@ -1,0 +1,7 @@
+//  Description :
+//            Inclure le fichier actuel dans le fichier actuel
+//
+// Résultat:
+//Circular include
+//
+#include "include_circulaire.deca"

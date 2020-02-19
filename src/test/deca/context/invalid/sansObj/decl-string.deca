@@ -1,0 +1,8 @@
+// Description:
+//    Déclaration d'une variable string
+//
+// Résultat:
+//type non défini
+{
+    string a;
+}

@@ -1,0 +1,10 @@
+//  Description :
+//      Deux } à la fin du fichier avec un seul { au début
+//
+// Résultat:
+//extraneous input '}' expecting <EOF>
+//
+
+{
+    println("Hello");
+} }

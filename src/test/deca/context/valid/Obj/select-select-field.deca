@@ -1,0 +1,16 @@
+// Description:
+//    Sélection d'un champ en cascade
+//
+// Résultat:
+//    Succès
+//
+class A {
+    int n;
+}
+class B {
+    A a;
+}
+{
+    B b ;
+    int m = b.a.n;
+}

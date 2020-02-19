@@ -1,0 +1,9 @@
+// Description:
+//          Utilisation du moins unaire sur un string
+//
+// Résultat:
+//Le terme à rendre négatif doit être un nombre
+//
+{
+    println(-"string");
+}

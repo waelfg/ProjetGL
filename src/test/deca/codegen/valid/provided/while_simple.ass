@@ -1,0 +1,28 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #0, R2
+	STORE R2, 1(GB)
+	ADDSP #2
+while0:
+	LOAD 1(GB), R2
+	LOAD #5, R3
+	CMP R3, R2
+	BLT lower1
+	LOAD #0, R3
+	BRA Fin_lower1
+lower1:
+	LOAD #1, R3
+Fin_lower1:
+	CMP #1, R3
+	BNE Finw0
+	LOAD 1(GB), R1
+	WINT
+	LOAD 1(GB), R2
+	LOAD #1, R4
+	ADD R2, R4
+	STORE R4, 1(GB)
+	BRA while0
+Finw0:
+	HALT
+; end main program

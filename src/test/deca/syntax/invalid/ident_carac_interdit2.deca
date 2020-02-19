@@ -1,0 +1,9 @@
+//  Description :
+//            Identificateur contenant un ç
+//
+// Résultat:
+//token recognition error at: 'ç'
+//
+{
+identifiçateur
+}

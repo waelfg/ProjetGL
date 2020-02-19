@@ -1,0 +1,7 @@
+// Description:
+//          Inclusion d'un fichier valide
+//
+// Résultat:
+//Succès
+//
+#include "hello.deca" 

@@ -1,0 +1,15 @@
+// Description:
+//    Redéfinition d'une méthode avec un mauvais returnType
+//
+// Résultat:
+//La signature de la méthode à définir  ne correspond pas à celle de la méthode héritée
+//
+class A {
+    void methode(){}
+}
+class B extends A{
+    int methode(){
+        return 1;
+    }
+}
+{}

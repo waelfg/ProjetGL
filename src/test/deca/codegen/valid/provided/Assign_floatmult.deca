@@ -1,0 +1,7 @@
+//Description
+//
+{
+    float a,b,c,d,e,f,g,h = 5.0 ; 
+    //print(a);
+    print(h) ; 
+}

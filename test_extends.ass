@@ -1,0 +1,16 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #1, R2
+	STORE R2, 1(GB)
+	LOAD #2, R2
+	STORE R2, 2(GB)
+	TSTO #3
+	BOV pile_pleine
+	ADDSP #3
+	HALT
+pile_pleine:
+	WSTR "Erreur: la pile est pleine"
+	WNL
+	ERROR
+; end main program

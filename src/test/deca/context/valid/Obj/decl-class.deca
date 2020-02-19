@@ -1,0 +1,8 @@
+// Description:
+//    Déclaration d'une classe sans attribut ni méthode
+//
+// Résultat:
+//    Succès
+//
+class A {}
+{}

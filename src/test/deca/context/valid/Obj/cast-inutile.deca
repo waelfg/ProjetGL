@@ -1,0 +1,12 @@
+// Description:
+//    Cast d'un int en un int, d'un float en un float, d'un boolean en boolean
+//
+// Résultat:
+//    Succès
+//
+
+{
+   int a = (int) (3);
+   float b = (float) (6.8);
+   boolean c = (boolean) (true);
+}

@@ -1,0 +1,16 @@
+// Description:
+//          Utilisation de if et de if-then-else
+//
+// Résultat:
+//          Succès
+//
+{
+    boolean a = false;
+    int b = 5;
+
+    if (b < 3){}
+
+    if (a){}
+    else if (b >= 2){}
+    else{b=10;}
+}

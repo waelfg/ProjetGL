@@ -1,0 +1,14 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #0x1.0p2, R2
+	PUSH R2
+	LOAD #0x1.0p1, R2
+	LOAD R2, R0
+	POP R2
+	DIV R2, R0
+	STORE R0, 1(GB)
+	LOAD 1(GB), R1
+	WFLOAT
+	HALT
+; end main program

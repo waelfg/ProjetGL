@@ -1,0 +1,10 @@
+// Description:
+//    Utilisation de new sur une variable
+//
+// Résultat:
+//On ne peut pas déclarer avec new un objet dont le type n'est pas implémenté
+//
+{
+    boolean vrai;
+    boolean oui = new vrai();
+}

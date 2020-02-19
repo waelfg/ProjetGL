@@ -1,0 +1,12 @@
+// Description:
+//    Méthode renvoyant un type
+//
+// Résultat:
+//Ne doit pas passer
+//
+class A{
+    int methode(){
+        return int;
+    }
+}
+{}

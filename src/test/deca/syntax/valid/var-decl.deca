@@ -1,0 +1,15 @@
+// Description:
+//          Déclarations et initialisations d'un entier, d'un flottant, d'un booléen
+//
+// Résultat:
+//Succès
+//
+{
+    int n;
+    boolean q;
+    float a ;
+    n = 5;
+    q = true;
+    a = 1.1 ; 
+    
+}

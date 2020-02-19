@@ -1,0 +1,14 @@
+// Description:
+//    Appel à une méthode avec une mauvaise signature
+//
+// Résultat:
+//Le type du paramètre donné ne correspond pas à celui du paramètre attendu
+//
+class A {
+    void methode(int x){}
+}
+{
+    A a;
+    float b = 5;
+    a.methode(b);
+}

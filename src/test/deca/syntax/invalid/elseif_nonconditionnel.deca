@@ -1,0 +1,11 @@
+//  Description :
+//            Structure ifthenelse avec un else if sans condition
+//
+// Résultat:
+//mismatched input '{' expecting '('
+//
+{
+    if(bool){}
+    else if {}
+    else{}
+}

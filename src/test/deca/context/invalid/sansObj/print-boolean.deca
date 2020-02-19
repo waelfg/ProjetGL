@@ -1,0 +1,10 @@
+//Description:
+//      print d'un booléen
+//
+// Résultat:
+//Print ne prend en arguments que des int, float ou string
+//
+{
+    boolean bool = true;
+    print(bool);
+}

@@ -1,0 +1,7 @@
+//Description : Déclaration de plusieurs attributs
+//
+class A {
+    int x ;
+    float y ;
+    boolean a ;
+}

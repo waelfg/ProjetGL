@@ -1,0 +1,12 @@
+//Description : Test du programme du sujet  page 210
+//
+class C {
+    int x ;
+    int y = 1 ;
+    int getX() {
+        return this.x;
+    }
+    void incrX() {
+        this.x = this.x + 1 ;
+    }
+}

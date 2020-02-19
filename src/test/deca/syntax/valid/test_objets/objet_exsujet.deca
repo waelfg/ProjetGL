@@ -1,0 +1,11 @@
+//Description : Test decl class et héritage avec méthodes
+//
+class A {
+    void m() {}
+    void p() {}
+}
+
+class B extends A {
+    void p() {}
+    void q() {}
+}

@@ -1,0 +1,14 @@
+// Description:
+//    Addition entre un entier et un booléen
+//
+// Résultat:
+//Opération entre 2 objets de types incompatibles
+//
+
+{
+   int a;
+   boolean b;
+
+   // Doit etre refuse.
+   a = a + b;
+}

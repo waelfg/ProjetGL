@@ -1,0 +1,11 @@
+// Description:
+//          Comparaison entre un float et un entier;
+//
+// Résultat:
+//Succès
+//
+{
+    float a = 1.0 ;
+    int b = 1 ; 
+    b == a ; 
+}

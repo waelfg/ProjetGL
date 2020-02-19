@@ -1,0 +1,12 @@
+//Description
+//
+{
+    int x = 2 ;  
+    float y = 3.0 ;   
+    if ((x<1 && y<5 )|| x>1) {
+        print("Condition 1");
+    }
+    else {
+        print("Condition 2") ;
+    }
+}

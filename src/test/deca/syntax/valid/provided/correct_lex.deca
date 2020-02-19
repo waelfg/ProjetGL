@@ -1,0 +1,8 @@
+// Description:
+//    test de programme lexicalement correct.
+//
+je mange un oiseau
+12*+-42
+&& ><
+"chaine"
+0.6

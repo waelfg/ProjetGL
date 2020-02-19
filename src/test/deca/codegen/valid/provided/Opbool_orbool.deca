@@ -1,0 +1,10 @@
+//Description
+//
+{
+    if ( true || true) {
+        print ("Condition 1");
+    }
+    else {
+        print("Condition 2");
+    }
+}

@@ -1,0 +1,6 @@
+{
+int x = 1;
+int z;
+z = 4 + x;
+print(z);
+}

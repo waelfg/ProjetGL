@@ -1,0 +1,12 @@
+// Description:
+//    Comparaison entre un entier et une classe
+//
+// Résultat:
+//Comparaison entre deux membres incompatibles
+//
+class A {
+}
+{
+    A a;
+    if (a == 89){}
+}

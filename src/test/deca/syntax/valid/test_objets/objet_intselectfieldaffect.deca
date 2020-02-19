@@ -1,0 +1,10 @@
+//Description : Test de l'affectation après sélection de l'attribut
+//
+class C {
+    int x ;
+}
+
+{
+    C c = new C() ;
+    c.x = 1 ;
+}

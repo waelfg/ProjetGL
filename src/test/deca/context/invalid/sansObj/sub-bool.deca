@@ -1,0 +1,11 @@
+// Description:
+//    Soustraction d'un int et d'un boolean
+//
+// Résultat:
+//Opération entre 2 objets de types incompatibles
+
+{
+   int a;
+   boolean b = false;
+   a = a - b;
+}

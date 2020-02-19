@@ -1,0 +1,13 @@
+// Description:
+//    Sélection d'une méthode non déclarée dans la classe
+//
+// Résultat:
+//La méthode n'est pas définie
+//
+class A{
+    int x;
+}
+{
+    A a = new A();
+    boolean bool = a.methode();
+}

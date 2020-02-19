@@ -1,0 +1,11 @@
+// Description:
+//    Déclaration d'un field de même nom qu'une méthode
+//
+// Résultat:
+//Une méthode ou un champ a déjà le même nom dans cette classe
+//
+class A{
+    void a(){}
+    int a;
+}
+{}

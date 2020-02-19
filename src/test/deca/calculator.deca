@@ -1,0 +1,67 @@
+{
+
+int left;
+int right;
+int oper=-1;
+int res;
+boolean cond = true;
+while(cond){
+print("Choisissez une operation ");
+println("[0]add [1]sub [2]mult [3]div [4]modulo ");
+oper = readInt();
+if (oper >=0){
+if (oper <=4){
+cond = false;
+}
+else{
+print("entrez une opération valide");
+}
+}
+else{
+print("entrez une opération valide");
+}
+}
+
+if (oper == 0){
+print("entrez left OP");
+left = readInt();
+print("entrez right OP");
+right = readInt();
+res = left+right;
+}
+else{
+if (oper == 1){
+print("entrez left OP");
+left = readInt();
+print("entrez right OP");
+right = readInt();
+res = left - right;
+}
+else{
+if (oper == 2){
+print("entrez left OP");
+left = readInt();
+print("entrez right OP");
+right = readInt();
+res = left*right;
+}
+else{
+if (oper == 3){
+print("entrez left OP");
+left = readInt();
+print("entrez right OP");
+right = readInt();
+res = left/right;
+}
+else{
+print("entrez left OP");
+left = readInt();
+print("entrez right OP");
+right = readInt();
+res = left%right;
+}
+}}}
+
+print(res);
+
+}

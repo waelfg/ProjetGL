@@ -1,0 +1,14 @@
+// Description:
+//    Selection d'un champ protected à l'intérieur du main
+//
+// Résultat:
+//On ne peut appeler le champ en dehors de sa classe ou d'une sous-classe
+//
+class A{
+    protected float x;
+}
+
+{
+    A a;
+    float y = A.x;
+}

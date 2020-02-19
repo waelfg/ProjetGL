@@ -1,0 +1,12 @@
+//Description
+//
+{
+    boolean y = false ;
+    boolean x = true ;
+    if (x!=y){
+        print("condition 1");
+    }
+    else {
+        print ("condition 2") ;
+    }
+}

@@ -1,0 +1,10 @@
+// Description:
+//          Utilisation du moins unaire sur un booléen
+//
+// Résultat:
+//Le terme à rendre négatif doit être un nombre
+//
+{
+    boolean bool;
+    bool = -false;
+}

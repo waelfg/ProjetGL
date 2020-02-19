@@ -1,0 +1,12 @@
+// Description:
+//    Return utilisé dans une méthode qui renvoie void
+//
+// Résultat:
+//On ne peut pas faire de return dans la main ou dans une classe qui doit renvoyer void
+//
+class A {
+    void methode(){
+        return true;
+    }
+}
+{}

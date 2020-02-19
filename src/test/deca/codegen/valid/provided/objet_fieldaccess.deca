@@ -1,0 +1,13 @@
+//Description : field access
+//
+class A {
+    int n () {
+        return 2 ;
+    }
+}
+{
+    A a = new A() ;
+    int m = a.n ;
+    println(m);
+}
+

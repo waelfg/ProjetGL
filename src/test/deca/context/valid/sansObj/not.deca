@@ -1,0 +1,12 @@
+// Description:
+//          Utilisation de l'opérateur unaire ! sur un booléen
+//
+// Résultat:
+//          Succès
+//
+{
+    boolean a = true;
+    boolean b;
+    b = !a;
+
+}

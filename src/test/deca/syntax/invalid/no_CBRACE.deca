@@ -1,0 +1,8 @@
+//  Description :
+//            Pas de } à la fin du fichier
+//
+// Résultat:
+//missing '}' at '<EOF>'
+//
+{
+    println("Hello");

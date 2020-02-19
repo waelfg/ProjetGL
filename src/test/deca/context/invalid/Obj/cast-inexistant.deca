@@ -1,0 +1,10 @@
+// Description:
+//    Cast en une classe qui n'est pas définie
+//
+// Résultat:
+//?
+//
+{
+    int obj;
+    obj = (classe) obj;
+}

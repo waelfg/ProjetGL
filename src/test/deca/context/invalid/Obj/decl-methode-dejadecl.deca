@@ -1,0 +1,15 @@
+// Description:
+//    Déclaration d'une méthode déjà déclarée
+//
+// Résultat:
+//Une méthode ou un champ a déjà le même nom dans cette classe
+//
+class A {
+    int methode(){
+    return 1;
+    }
+    int methode(){
+    return 2;
+    }
+}
+{}

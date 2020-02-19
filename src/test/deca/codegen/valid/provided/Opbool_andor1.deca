@@ -1,0 +1,11 @@
+//Description
+//
+{
+    float x = 10.0 ;
+    int i = 0 ; 
+    while (x>5 && x<10){
+        println(i) ; 
+        i = i - 1 ; 
+        x = x-1 ; 
+    }
+}

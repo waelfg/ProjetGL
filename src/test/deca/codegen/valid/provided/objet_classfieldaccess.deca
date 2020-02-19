@@ -1,0 +1,11 @@
+//Description : class field access
+//
+class A {
+    int n ;
+    int m ;
+}
+
+class B {
+    A a = new A();
+    int p ;
+}

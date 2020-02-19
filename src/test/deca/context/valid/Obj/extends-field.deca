@@ -1,0 +1,14 @@
+// Description:
+//    Déclaration d'une classe qui étend une autre classe et appel à un field de la superclasse
+//
+// Résultat:
+//    Succès
+//
+class A {
+    int a;
+}
+class B extends A{}
+{
+    B b;
+    int n = b.a;
+}

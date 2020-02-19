@@ -1,0 +1,9 @@
+//  Description :
+//            Identificateur contenant un è
+//
+// Résultat:
+//token recognition error at: 'è'
+//
+{
+identièficateur
+}

@@ -1,0 +1,12 @@
+// Description:
+//    Return un boolean alors qu'elle attendait un int
+//
+// Résultat:
+//Le type renvoyé en pratique doit correspondre à un sous-type du type attendu
+//
+class A {
+    int methode(){
+        return false;
+    }
+}
+{}

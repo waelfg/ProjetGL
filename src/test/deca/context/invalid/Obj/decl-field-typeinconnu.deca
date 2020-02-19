@@ -1,0 +1,10 @@
+// Description:
+//    Déclaration d'un champ de type non défini
+//
+// Résultat:
+//Le type du champ n'est pas défini
+//
+class A {
+    champ a;
+}
+{}

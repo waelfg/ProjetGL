@@ -1,0 +1,13 @@
+// Description:
+//    Cast d'un int en float
+//
+// Résultat:
+//    Succès
+//
+
+{
+   int a;
+   float b;
+   (float) (a);
+   b = a;
+}

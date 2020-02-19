@@ -1,0 +1,9 @@
+// Description:
+//    Soustraction d'un int et d'un string
+//
+// Résultat:
+//Opération entre 2 objets de types incompatibles
+{
+   int a;
+   a = a - "non-nombre";
+}

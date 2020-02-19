@@ -1,0 +1,9 @@
+// Description:
+//          Affectation d'un readInt() à un float, et donc conversion de la valeur en float
+//
+// Résultat:
+//          Succès
+{
+    float a;
+    a = readInt();
+}

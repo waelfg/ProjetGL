@@ -1,0 +1,8 @@
+// Description:
+//    Déclaration d'une classe qui extends une classe non définie
+//
+// Résultat:
+//La superclasse n'est pas définie
+//
+class A extends B {}
+{}

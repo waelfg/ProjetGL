@@ -1,0 +1,9 @@
+// Description:
+//    Utilisation de new sur un type
+//
+// Résultat:
+//On ne peut déclarer que des classes avec new
+//
+{
+    int n = new int();
+}

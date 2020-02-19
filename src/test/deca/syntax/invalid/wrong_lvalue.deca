@@ -1,0 +1,9 @@
+//  Description :
+//            égalité entre deux nombres différents
+//
+// Résultat:
+//left-hand side of assignment is not an lvalue
+//
+{
+    1 = 2 ; 
+}

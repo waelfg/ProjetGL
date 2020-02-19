@@ -1,0 +1,13 @@
+// Description:
+//    Affectation de deux float entre eux
+//
+// Résultat:
+//    Succès
+//
+{
+   float a;
+   float b;
+
+   // Doit etre accepté.
+   a = b;
+}

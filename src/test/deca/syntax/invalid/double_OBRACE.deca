@@ -1,0 +1,9 @@
+//  Description :
+//            Deux { au début du fichier et un seul } à la fin
+//
+// Résultat:
+//mismatched input '{'
+//
+{ {
+    println("Hello") ; 
+}    

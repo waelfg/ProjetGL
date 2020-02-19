@@ -1,0 +1,15 @@
+//Description : field access with multiple floats
+//
+class A {
+    float n = 0.0  ;
+    float m = 1.0 ;
+    float p = 2.0 ;
+
+}
+{
+    A a = new A() ;
+    println(a.n);
+    println(a.m);
+    println(a.p) ;
+}
+

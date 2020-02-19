@@ -1,0 +1,11 @@
+// Description:
+//    Déclaration d'une méthode qui renvoie null
+//
+// Résultat:
+//    Succès
+//
+class A {
+    int methode(){
+        return null;
+    }
+{}

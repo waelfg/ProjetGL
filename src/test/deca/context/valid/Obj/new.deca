@@ -1,0 +1,10 @@
+// Description:
+//    Utilisation de New
+//
+// Résultat:
+//    Succès
+//
+class A {}
+{
+    A a = new A();
+}

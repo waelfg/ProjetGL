@@ -1,0 +1,6 @@
+class A {
+  int value;
+  public setValue(int i){
+    value=i;
+  }
+}

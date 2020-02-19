@@ -1,0 +1,9 @@
+//  Description :
+//            Print sans parenthèse
+//
+// Résultat:
+//mismatched input ';' expecting '('
+//
+{
+    print;
+}

@@ -1,0 +1,14 @@
+//Description : field access with multiple booleans
+//
+class A {
+    boolean n = true ;
+    boolean m = false ;
+    boolean p = true ;
+
+}
+{
+    A a = new A() ;
+    println(a.n);
+    println(a.m);
+    println(a.p) ;
+}

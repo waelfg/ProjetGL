@@ -1,0 +1,7 @@
+{
+
+boolean a = true;
+boolean b = true;
+boolean c = a&&b;
+
+}

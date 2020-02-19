@@ -1,0 +1,14 @@
+//Description : Test des héritages
+//
+class A {
+    void m(){}
+}
+class B extends A {
+    void m(){}
+}
+class C extends B {
+    void m(){}
+}
+class D extends C {
+    void m(){}
+}

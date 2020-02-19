@@ -1,0 +1,10 @@
+// Description:
+//    Déclaration d'une variable déjà déclarée
+//
+// Résultat:
+//Une autre variable déjà déclarée a le même nom
+//
+{
+   int a = 1;
+   int a = 32;
+}

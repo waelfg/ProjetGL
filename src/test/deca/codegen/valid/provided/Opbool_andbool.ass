@@ -1,0 +1,22 @@
+; start main program
+; Main program
+; Beginning of main instructions:
+	LOAD #1, R1
+	LOAD #1, R2
+	CMP #0, R1
+	BEQ Faux
+	CMP #0, R2
+	BEQ Faux
+	LOAD #1, R1
+	BRA Vrai
+Faux:
+	LOAD #0, R1
+Vrai:
+	CMP #0, R2
+	BEQ else
+	WSTR "Condition 1"
+	BRA fin
+else:
+fin:
+	HALT
+; end main program

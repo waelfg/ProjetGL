@@ -1,0 +1,7 @@
+{
+
+boolean a = false;
+boolean b = true;
+boolean c = a||b;
+
+}

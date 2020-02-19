@@ -1,0 +1,19 @@
+// Description:
+//    Utilisation d'un setter et d'un getter sur un champ protected dans le main
+//
+// Résultat:
+//    Succès
+//
+class A {
+    protected int n;
+    int getN(){
+        return this.n;
+    }
+    void setN(int m){
+        this.n = m;
+    }
+}
+{
+    A a;
+    int n = a.getN();
+}

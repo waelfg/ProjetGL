@@ -1,0 +1,11 @@
+// Description:
+//    Déclaration d'une méthode avec un returntype non défini
+//
+// Résultat:
+//Le type de retour de la méthode n'est pas défini
+//
+class A {
+    nondef methode(){
+    }
+}
+{}

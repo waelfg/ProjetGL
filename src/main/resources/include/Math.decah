@@ -1,0 +1,458 @@
+
+class Math{
+    /*
+    Classe Math qui comprend des méthodes définissants plusieurs
+    fonctions mathématiques utilisables par deca.
+    */
+
+    //boolean isNaN(float x){
+    //  /*
+    //  Méthode qui renvoie: true si x n'est pas réel (Not a Number),
+    //  et false sinon.
+    //  */
+    //    return (x != x);
+    //}
+
+
+    float absolue(float x){
+      /*
+      Méthode renvoyant la valeur absolue d'un réel x.
+      */
+      float abs = 0;
+
+        if (x >= 0) {
+            abs = x;
+        } else {
+            abs = -x;
+        }
+        return abs;
+    }
+
+
+    int signe(float x){
+      /*
+      Méthode qui renvoie -1 si x est strictement négatif, +1 si x est
+      strictement positif et 0 sinon.
+      */
+        int S = 0;
+
+        if (x != 0){
+            S = (int) (x/absolue(x));
+        }
+        return S;
+    }
+
+
+    float fact(int n){
+        /**
+        Méthode renvoyant la factorielle d'un entier n.
+        */
+        float fac = 1;
+
+        if (n == 0 || n == 1){
+            fac = 1;
+        } else {
+            fac =  (float) (n*fact(n-1));
+        }
+        return fac;
+    }
+
+
+    int pow1(int n){
+        /**
+        Méthode calculant la valeur x^n (x puissance n), où x: est un réel et n
+        un entier (algorithme récursif)
+        */
+        int power1 = 1;
+
+        if (n % 2 == 0){
+            power1 =  1;
+        } else {
+            power1 = -1;
+        }
+        return power1;
+    }
+
+
+    float pow(float x, int n){
+        /**
+        Méthode calculant la valeur x^n (x puissance n), où x: est un réel et n
+        un entier (algorithme récursif)
+        */
+        float power = 1;
+
+        if (x == 0) {
+            if (n != 0) {
+              power = 0;
+            } else {
+              power = 1;
+            }
+        } else {
+            if (n == 0){
+              power = 1;
+            } else {
+              if (n > 0){
+              power = x * pow(x, n-1);
+              } else {
+                power = 1/x * pow(x, n+1);
+              }
+            }
+          }
+        return power;
+    }
+
+
+    float sqrt(float x){
+        /**
+        Méthode calculant la racine carrée d'un réel positif en utilisant
+        la méthode de Héron (algorithme itératif).
+        */
+        float precise_value = x;
+        float value = -1;
+        int compteur = 0;
+        float coeff = (float) 0.5;
+
+        if (x < 0){
+          println("Erreur: Argument négatif !");
+          // return Float.NaN;
+        } else if (x == 0){
+              precise_value = 0;
+            } else {
+                while (precise_value != value) {
+                  value = precise_value;
+                  precise_value = coeff *(value + (x/value));
+                }
+            }
+        return precise_value;
+    }
+
+
+    // float nulp(float x){
+    //     /**
+    //     Méthode naïve calculant le Unit in the Last Place correspondant
+    //     à un réel x donnée.
+    //     */
+    //     int k=0;
+    //     float result = 0;
+    //     if(isNaN(x)){
+    //       return Float.NaN;
+    //     }
+    //     if (absolue(x) >= 1){
+    //         while (pow(2, k) <= absolue(x)){
+    //           k = k+1;
+    //         }
+    //         result = pow(2, k-24);
+    //     } else {
+    //         if (absolue(x) < 1){
+    //             if (x == 0){
+    //                 return (float) 1.4E-45;
+    //             } else {
+    //                 while (pow(2, k) > x){
+    //                   k--;
+    //                 }
+    //                 result = pow(2, k-23);
+    //             }
+    //         }
+    //     }
+    //     return result;
+    // }
+
+
+    float ulp(float x){
+        /**
+        Méthode plus efficace calculant par dichotomie le Unit in
+        the Last Place (Définition de Kahan).
+        */
+        float min = pow(2, -126);
+        int expmin = -126;
+        float max = pow(2, 129);
+        int expmax = 129;
+
+        float val = absolue(x);
+        if (val <= pow(2,-126)){
+            return pow(2, -149);
+        // }
+        // else if (val > (2-pow(2,-23))*pow(2,127) || val == Float.POSITIVE_INFINIT){
+        //     return Float.POSITIVE_INFINITY;
+        } else {
+                while (expmax - expmin > 1){
+                    int expmiddle = (int) ((expmax + expmin)/2);
+                    float middle = pow(2, expmiddle);
+                    if (val >= middle){
+                        min = middle;
+                        expmin = expmiddle;
+                    } else {
+                        max = middle;
+                        expmax = expmiddle;
+                    }
+                }
+                return pow(2, expmin - 23);
+            }
+        }
+
+
+  float sintaylor(float x){
+      /**
+      Méthode calculant la valeur du sinus d'un réel x en utilisant
+      la formule de Taylor.
+      */
+      float sum = 0;
+      int i = 0;
+      if (x != 0){
+          while (i < 18){  // si i>=18 fact(2*i+1) diverge.
+              sum = sum + (pow1(i)*pow(x, 2*i+1))/fact(2*i+1);
+              i = i + 1;
+          }
+      }
+      return sum;
+  }
+
+
+  float costaylor(float x){
+      /**
+      Méthode calculant la valeur du cosinus d'un réel x en utilisant
+      la formule de Taylor.
+      */
+      float sum = 1;
+      int i = 1;
+
+      if (x != 0){
+          while (i < 18){
+              sum = sum + pow1(i)*(pow(x, 2*i))/fact(2*i);
+              i = i + 1;
+              // println(sum);
+          }
+      }
+      return sum;
+  }
+
+
+  float arctantaylor(float x){
+      /**
+      Méthode calculant la valeur de arctan(x), pour un réel x donné.
+      */
+      float sum = 0;
+      int i = 0;
+
+      if (x != 0){
+          while (i < 50){
+              sum = sum + (pow1(i)*pow(x, 2*i+1))/(2*i+1);
+              i = i + 1;
+          }
+      }
+      return sum;
+  }
+
+
+  float arctan(float x){
+      /**
+      Méthode calculant la valeur de arctan(x), pour un réel x donné.
+      */
+      float halfPi = (float) 1.5707964;
+      float quarterPi = (float) 0.7853982;
+
+      if (x == 0){
+          return 0;
+      } else if (absolue(x)==1){
+            return signe(x)*quarterPi;
+        } else if (absolue(x) < 1){
+            return arctans(x);
+        } else {
+            return signe(x)*halfPi - arctans(1/x);
+        }
+
+    }
+
+
+  float arcsin(float x){
+      /**
+      Méthode calculant la valeur de arcsin(x) utilisant une relation entre
+      arctan et arcsin.
+      */
+      return 2*arctan(x/(1+sqrt(1-pow(x,2))));
+  }
+
+
+  float sincordic(float theta){
+      /**
+      Méthode calculant la valeur de sin(x), en utilisant l'algorithme
+      du CORDIC.
+      */
+      float K = (float) 0.60725294;
+      float x = K;
+      float x_old = K;
+      float y = 0;
+      float z = theta;
+      int delta;
+      int i = 0;
+
+      while (i < 50) {
+          if (z > 0) {
+            delta = 1;
+          }
+          else {
+            delta = -1;
+          }
+
+          x = x - delta*y*pow(2, -i);
+          y = y + delta*x_old*pow(2, -i);
+          z = z - delta*arctan(pow(2, -i));
+          x_old = x;
+          i = i + 1;
+      }
+
+      return y;
+    }
+
+
+  float coscordic(float theta){
+      /**
+      Méthode calculant la valeur de sin(x), en utilisant l'algorithme
+      du CORDIC.
+      */
+      float K = (float) 0.607252;
+      float x = K;
+      float x_old = K;
+      float y = 0;
+      float z = theta;
+      int delta;
+      int i = 0;
+
+      while (i < 40) {
+          if (z > 0) {
+            delta = 1;
+          }
+          else {
+            delta = -1;
+          }
+
+          x = x - delta*y*pow(2, -i);
+          y = y + delta*x_old*pow(2, -i);
+          z = z - delta*arctan(pow(2, -i));
+          x_old = x;
+          i = i + 1;
+      }
+
+      return x;
+    }
+
+
+  // public float computeK(int k){
+  //     float K = 1;
+  //     float Kprime = 1;
+  //
+  //     for (int i = 1; i < k; i++){
+  //       K *= sqrt(1/(1 + (pow(2, -2*i))));
+  //       Kprime *= costaylor(arctans(pow(2, -i)));
+  //     }
+  //     return K;
+  // }
+
+
+
+  float arctans(float x){
+      /* Méthode calculant l'arctan pour des petites valeurs en utilisant
+      l'algorithme de la moyenne arithmético-géométrique.
+      */
+
+      float a = (float) (1/sqrt(1+pow(x,2)));
+      float a_old = (float) (1/sqrt(1+pow(x,2)));
+      float b = 1;
+      float b_old = 1;
+
+      int i=0;
+
+      while (i < 15){
+
+          a = ((float) 0.5)*(a_old + b_old);
+          b = sqrt(a*b_old);
+          a_old = a;
+          b_old = b;
+          i = i + 1;
+          // System.out.println(a);
+      }
+      return (float) (x/(a*sqrt(1+pow(x, 2))));
+  }
+
+
+  float naivereduction1(float x){
+    /*
+    Première méthode de réduction naïve.
+    */
+
+      float halfPi = (float) 1.5707963;
+      float Pi = (float) 3.1415927;
+      int k = 0;
+
+      while (absolue(x - halfPi) > halfPi){
+          x = x - halfPi;
+          k = k + 1;
+      }
+      //println(k);
+      return (x - Pi);
+  }
+
+  float naivereduction2(float x){
+    /*
+    Deuxième méthode de réduction naïve.
+    */
+
+      float halfPi = (float) 1.5707963;
+      float y = (float) (absolue(x)/halfPi);
+      int k = 0;
+
+      while (k <= y){
+        k = k+1;
+      }
+      return (x-signe(x)*(k-1)*halfPi);
+
+
+}
+      float reduction(float x){
+        /*
+        Méthode de Cody and Wait de reduction d'angle.
+        */
+          float angle = 0;
+          float halfPi1 = (float) 1.5707963;
+          float halfPi2 = (float) 2.6794897E-8;
+          float y = (float) (absolue(x)/halfPi1);
+          int k = 0;
+
+          while (k <= y){
+            k = k+1;
+          }
+          angle = x - signe(x)*(k-1)*halfPi1; //Reduction
+          // println(angle);
+          angle = angle - signe(x)*(k-1)*halfPi2; //Correction
+          return angle;
+  }
+
+  float cos(float x){
+      /**
+      Méthode calculant la valeur de cos(x).
+      */
+      float halfPi = (float) 1.5707963;
+
+      return sin(halfPi - x);
+
+    }
+
+  float sin(float x){
+      /**
+      Méthode calculant la valeur de sin(x).
+      */
+      float halfPi = (float) 1.5707963;
+      float res=0;
+
+      if (absolue(x) < 0.5){
+          res = sintaylor(x);
+      } else if (absolue(x) > 0.5 && absolue(x) < halfPi){
+          res = sincordic(x);
+      } else if ( absolue(x) > halfPi){
+          res = sin(reduction(x));
+      }
+      return res;
+
+    }
+
+}

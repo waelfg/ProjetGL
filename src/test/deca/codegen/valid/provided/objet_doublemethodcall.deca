@@ -1,0 +1,23 @@
+//Description : Implémentation des méthodes dans les classes
+//
+class A {
+    int x = 0 ;
+    int y = 0 ;
+
+
+    void plusoneX() {
+            this.x = this.x + 1 ;
+        }
+    void incrementX() {
+            this.plusoneX() ;
+        }
+
+    void incrementNumber() {
+        this.incrementX() ;
+        this.y = this.y + 1 ;
+    }
+
+
+
+
+}

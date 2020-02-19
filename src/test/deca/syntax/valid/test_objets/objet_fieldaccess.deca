@@ -1,0 +1,10 @@
+//Description : field access
+//
+class A {
+    int n=0 ;
+}
+{
+    A a = new A() ;
+    println(a.n);
+}
+

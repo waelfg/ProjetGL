@@ -1,0 +1,11 @@
+//  Description :
+//            Structure ifthenelse avec un if sans bloc d'instructions
+//
+// Résultat:
+//mismatched input 'else'
+//
+{
+    if(bool)
+    else if (notbool) {}
+    else{}
+}

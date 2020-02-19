@@ -1,0 +1,12 @@
+// Description:
+//          Utilisation des opérateurs binaires de comparaisons sur des booléens
+//
+// Résultat:
+//Succès
+//
+{
+    boolean b ;
+    b = ( true == false) ; 
+    b = ( true && false ) ; 
+    b = (true || false) ; 
+}

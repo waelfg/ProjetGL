@@ -1,0 +1,53 @@
+; start main program
+; Début du programme
+	STORE R0, 1(GB)
+	TSTO #2
+	BOV pile_pleine
+	ADDSP #2
+; Main program
+; Beginning of main instructions:
+; new
+	NEW #0, R2
+	LEA 0(GB), R0
+	STORE R0, 0(R2)
+	PUSH R2
+	BSR init.A
+	POP R2
+	STORE R2, 1(GB)
+	STORE R2, 1(GB)
+	TSTO #2
+	BOV pile_pleine
+	ADDSP #2
+	HALT
+; Methode Equals
+code.Object.equals:
+	PUSH R2
+	PUSH R3
+	LOAD -2(LB), R2
+	LOAD -3(LB), R3
+	CMP R2, R3
+	BEQ true
+	ADD #0, R0
+	BRA fin
+true:
+	ADD #0, R0
+fin:
+	BRA fin.Object.equals
+	WSTR "Erreur: sortie de la méthode equals sans return"
+	WNL
+	ERROR
+fin.Object.equals:
+	POP R3
+	POP R2
+	RTS
+; initialisation des champs de la classe A
+	LOAD -2(LB), R0
+	PUSH R0
+	SUBSP #1
+init.A:
+	RTS
+pile_pleine:
+	WSTR "Erreur: la pile est pleine"
+	WNL
+	ERROR
+; end main program

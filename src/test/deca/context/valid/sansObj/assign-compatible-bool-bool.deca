@@ -1,0 +1,13 @@
+// Description:
+//    Affectation de deux booléens entre eux
+//
+// Résultat:
+//    Succès
+//
+{
+   boolean a;
+   boolean b;
+
+   // Doit etre accepté.
+   a = b;
+}

@@ -1,0 +1,135 @@
+; start main program
+; Début du programme
+	TSTO #1
+	BOV pile_pleine
+	ADDSP #1
+; Main program
+; Beginning of main instructions:
+	TSTO #1
+	BOV pile_pleine
+	ADDSP #1
+	LOAD #2, R2
+	LOAD #1, R3
+	CMP R3, R2
+	BGT great1
+	LOAD #0, R3
+	BRA Fin_great1
+great1:
+	LOAD #1, R3
+Fin_great1:
+	CMP #0, R3
+	BEQ else11
+	WSTR "Condition 1"
+	BRA fin_if11
+else11:
+fin_if11:
+	LOAD #1, R2
+	LOAD #2, R3
+	CMP R3, R2
+	BGE greateq2
+	LOAD #0, R3
+	BRA Fin_greateq2
+greateq2:
+	LOAD #1, R3
+Fin_greateq2:
+	CMP #0, R3
+	BEQ else24
+	WSTR "Condition 2"
+	BRA fin_if24
+else24:
+fin_if24:
+	LOAD #3, R2
+	LOAD #4, R3
+	CMP R3, R2
+	BLT lower3
+	LOAD #0, R3
+	BRA Fin_lower3
+lower3:
+	LOAD #1, R3
+Fin_lower3:
+	CMP #0, R3
+	BEQ else310
+	WSTR "Condition 3"
+	BRA fin_if310
+else310:
+fin_if310:
+	LOAD #5, R2
+	LOAD #6, R3
+	CMP R3, R2
+	BLE lowereq4
+	LOAD #0, R3
+	BRA Fin_lowereq4
+lowereq4:
+	LOAD #1, R3
+Fin_lowereq4:
+	CMP #0, R3
+	BEQ else422
+	WSTR "Condition 4"
+	BRA fin_if422
+else422:
+fin_if422:
+	LOAD #3, R2
+	LOAD #1, R3
+	CMP R3, R2
+	BNE neq5
+	LOAD #0, R3
+	BRA Fin_neq5
+neq5:
+	LOAD #1, R3
+Fin_neq5:
+	CMP #0, R3
+	BEQ else546
+	WSTR "Condition 5"
+	BRA fin_if546
+else546:
+fin_if546:
+	LOAD #1, R2
+	LOAD #1, R3
+	CMP R3, R2
+	BEQ eq6
+	LOAD #0, R3
+	BRA Fin_eq6
+eq6:
+	LOAD #1, R3
+Fin_eq6:
+	CMP #0, R3
+	BEQ else694
+	WSTR "Condition 6"
+	BRA fin_if694
+else694:
+fin_if694:
+	HALT
+; Methode Equals
+code.Object.equals:
+	PUSH R2
+	PUSH R3
+	LOAD -2(LB), R2
+	LOAD -3(LB), R3
+	CMP R2, R3
+	BEQ true
+	ADD #0, R0
+	BRA fin
+true:
+	ADD #0, R0
+fin:
+	BRA fin.Object.equals
+	WSTR "Erreur: sortie de la méthode equals sans return"
+	WNL
+	ERROR
+fin.Object.equals:
+	POP R3
+	POP R2
+	RTS
+pile_pleine:
+	WSTR "Erreur: la pile est pleine"
+	WNL
+	ERROR
+dereferencement_null:
+	WSTR "Erreur: dereferencement de null"
+	WNL
+	ERROR
+tas_plein:
+	WSTR "Erreur: allocation impossible, tas plein"
+	WNL
+	ERROR
+; end main program

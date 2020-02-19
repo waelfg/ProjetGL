@@ -1,0 +1,12 @@
+// Description:
+//    Selection d'un champ d'une classe sans avoir initialisé d'instance de cette classe
+//
+// Résultat:
+//Ne doit pas passer
+//
+class A {
+    int a;
+}
+{
+    int b = A.a;
+}

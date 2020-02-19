@@ -1,0 +1,10 @@
+// Description:
+//          Utilisation de l'opérateur == avec un string et un bool
+//
+// Résultat:
+//Comparaison entre deux membres incompatibles
+//
+{
+    boolean a = true;
+    boolean c = (a=="non-booléen");
+}

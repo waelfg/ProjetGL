@@ -1,0 +1,13 @@
+// Description:
+//          Utilisation de l'opérateur && sur des booléens
+//
+// Résultat:
+//          Succès
+//
+{
+    boolean a = true;
+    boolean b = false;
+    boolean c = true;
+    if (a && b){}
+    if ((a && b) && c){}
+}

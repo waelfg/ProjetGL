@@ -1,0 +1,13 @@
+// Description:
+//    Programme lexicalement correct mais pas syntaxiquement
+//
+// Resultats:
+//no viable alternative at input 'idf'
+//Succès pour test_lex
+
+idf _autre_idf
+{
+}
+(
+)
+// un commentaire.

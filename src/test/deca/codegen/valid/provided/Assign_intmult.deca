@@ -1,0 +1,7 @@
+//Description
+//
+{
+    int a,b,c,d,e,f,g,h = 5 ; 
+    print(a);
+    print(h) ; 
+}
